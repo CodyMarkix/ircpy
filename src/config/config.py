@@ -6,7 +6,7 @@ def createConfig(folderpath: str, configpath: str):
             os.mkdir(folderpath)
             
         with open(configpath, 'w') as f:
-            f.write('{ "server": "irc.freenode.net", "port": "6667", "creds": { "nick": "Markix", "username": "markix", "realname": "Marek", "pass": "None" }}')
+            f.write('{ "server": "your.own.server.here", "port": "6667", "creds": { "nick": "put", "username": "your", "realname": "creds", "pass": "here" }}')
     else:
         return None
 
