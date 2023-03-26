@@ -28,7 +28,7 @@ def receive(sock):
         print(res)
 
         if res[0:4] == 'PING':
-            sock.send(f'PONG {res[4:]}\n')
+            sock.send(f'PONG {res[4:]}\n'.encode(ENCODE))
             print(sock.recv(1024).decode(ENCODE))
 
 def main():
